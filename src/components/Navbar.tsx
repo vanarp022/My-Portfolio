@@ -21,9 +21,6 @@ const Navbar = () => {
             <Code2 className="h-6 w-6" />
             <span className="text-xl font-bold">Pranav's Portfolio</span>
           </Link>
-
-          <a href = "/assets/samplefile.xlsx" download>sample File</a>
-          
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-6">
