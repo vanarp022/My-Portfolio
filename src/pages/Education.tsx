@@ -4,6 +4,26 @@ import { Award, Download } from 'lucide-react';
 const Education = () => {
   const achievements = [
     {
+      descr: "Gold Medallist in SOF National Mathematic Olympiad",
+      year: "Class 7,8,9,10",
+    },
+    {
+      descr: "Gold Medallist in SOF National Science Olympiad",
+      year: "Class 9,10",
+    },
+    {
+      descr: "Gold Medallist in National Level Science Talent Search Examination",
+      // year: "2020",
+    },
+    {
+      descr: "Silver Medallist in SOF National Science Olympiad",
+      year: "Class 8",
+    },
+    {
+      descr: "State Level Chess Player",
+      year: "(Uttarakhand)",
+    },
+    {
       descr: "Got 1st Prize at Inter-College Robowar",
       year: 2024,
     },
@@ -125,8 +145,12 @@ const Education = () => {
             <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
               <ul className="list-disc list-inside space-y-2">
                 {achievements.map((ach, index) => (
+                  // <li key={index} className="pl-3.5 m-1.5 flex items-center transition transform hover:scale-[1.07] origin-left">
+                  //   <Award className="h-5 w-5 text-yellow-500 mr-2" /> {ach.descr} - {ach.year}
+                  // </li>
+
                   <li key={index} className="pl-3.5 m-1.5 flex items-center transition transform hover:scale-[1.07] origin-left">
-                    <Award className="h-5 w-5 text-yellow-500 mr-2" /> {ach.descr} - {ach.year}
+                    <Award className="h-5 w-5 text-yellow-500 mr-2" /> {ach.descr} {ach.year ? ` - ${ach.year}` : ''}
                   </li>
                 ))}
               </ul>
