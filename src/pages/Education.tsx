@@ -60,7 +60,7 @@ const Education = () => {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
             <h1 className="text-4xl font-bold mb-4 md:mb-0">Education & Skills</h1>
             <a
-              href="/path-to-your-cv.pdf"
+              href="/public/resumeCV.pdf"
               download
               className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
