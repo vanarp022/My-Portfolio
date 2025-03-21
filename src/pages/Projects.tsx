@@ -14,7 +14,7 @@ const Projects = () => {
     : projects.filter(project => project.technologies.includes(filter));
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 pt-24 pb-20">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 pt-24 pb-20 mt-2">
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-bold mb-8 text-gray-900 dark:text-white animate-fade-in">
           My Projects

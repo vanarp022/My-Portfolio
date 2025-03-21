@@ -9,16 +9,16 @@ const Home = () => {
 
   const skillCategories = [
     {
-      title: 'Programming Languages',
-      skills: ['Python', 'Java', 'C++', 'JavaScript', 'TypeScript']
+      title: 'Adept Working With',
+      skills: ['C++', 'Python', 'Tailwind', 'SQL', 'NoSQL', 'React', 'JavaScript', 'Node.js', 'Express', 'APIs', 'Next.js']
     },
     {
-      title: 'Web Technologies',
-      skills: ['React', 'Node.js', 'HTML5', 'CSS3', 'MongoDB', 'SQL']
+      title: 'Proficient Technologies',
+      skills: ['React', 'Node.js', 'HTML5', 'CSS3', 'MongoDB', 'SQL', 'Git', 'Docker', 'Linux', 'VS Code', 'Figma']
     },
     {
-      title: 'Tools & Technologies',
-      skills: ['Git', 'Docker', 'AWS', 'Linux', 'VS Code', 'Figma']
+      title: 'ML Proficiency',
+      skills: ['Pandas', 'Numpy', 'Matplotlib', 'Seaborn', 'Scikit-learn', 'Tensorflow', 'Keras', 'PyTorch', 'OpenCV', 'Jupyter Notebook']
     }
   ];
 
@@ -149,8 +149,12 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+
     </div>
   );
 };
 
 export default Home;
+
+

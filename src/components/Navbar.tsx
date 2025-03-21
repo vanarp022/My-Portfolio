@@ -14,13 +14,15 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-white dark:bg-gray-900 text-gray-800 dark:text-white py-4 fixed w-full top-0 z-50 shadow-md">
+    <nav className="bg-white dark:bg-gray-950 dark:border-b dark:border-gray-700 text-gray-800 dark:text-white py-4 fixed w-full top-0 z-50 shadow-md">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
             <Code2 className="h-6 w-6" />
             <span className="text-xl font-bold">Pranav's Portfolio</span>
           </Link>
+
+          <a href = "/public/assets/sample file.xlsx" download>sample File</a>
           
           
           {/* Desktop Navigation */}
