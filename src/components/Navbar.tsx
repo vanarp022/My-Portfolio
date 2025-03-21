@@ -21,17 +21,7 @@ const Navbar = () => {
           <span className="text-xl font-bold">Pranav's Portfolio</span>
         </Link>
 
-        <div className="flex items-center space-x-4">
-          {/* Hamburger for mob */}
-          <button
-            className="md:hidden"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
-        </div>
-
-        {/* Desktop nav */}
+        {/* desktop nav */}
         <div className="hidden md:flex items-center space-x-6">
           {navLinks.map(({ path, icon: Icon, label }) => (
             <Link
@@ -45,11 +35,23 @@ const Navbar = () => {
               <span>{label}</span>
             </Link>
           ))}
+          <div className="ml-auto">
+            <ThemeToggle />
+          </div>
+        </div>
+
+        {/* mob nav */}
+        <div className="flex md:hidden items-center space-x-4">
           <ThemeToggle />
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
         </div>
       </div>
 
-      {/* Mobile Navigation */}
+      {/* Mob */}
       {isMenuOpen && (
         <div className="md:hidden mt-4 space-y-4 bg-white dark:bg-gray-950 py-2 shadow-lg flex flex-col items-start px-4">
           {navLinks.map(({ path, icon: Icon, label }) => (
@@ -65,9 +67,6 @@ const Navbar = () => {
               <span>{label}</span>
             </Link>
           ))}
-          <div className="mt-4 self-start">
-            <ThemeToggle />
-          </div>
         </div>
       )}
     </nav>
