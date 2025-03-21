@@ -16,7 +16,7 @@ export const projects: Project[] = [
     description: "A website that showcases my projects and work, enabling companies and individuals to evaluate me accordingly.",
     image: "/assets/portfolioWebsite.png",
     technologies: ["WebDev", "JS", "React"],
-    githubUrl: "http://localhost:5173/",
-    liveUrl: "http://localhost:5173/"
+    githubUrl: "https://github.com/vanarp022/My-Portfolio",
+    liveUrl: "https://pranavs-portfolio-one.vercel.app/"
   },
 ];
