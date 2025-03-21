@@ -22,7 +22,7 @@ const Navbar = () => {
             <span className="text-xl font-bold">Pranav's Portfolio</span>
           </Link>
 
-          <a href = "/public/assets/sample file.xlsx" download>sample File</a>
+          <a href = "/assets/samplefile.xlsx" download>sample File</a>
           
           
           {/* Desktop Navigation */}
