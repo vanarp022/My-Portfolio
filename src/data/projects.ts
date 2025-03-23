@@ -19,4 +19,13 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/vanarp022/My-Portfolio",
     liveUrl: "https://pranavs-portfolio-one.vercel.app/"
   },
+  {
+    id: 3,
+    title: "Sorting Visualizer",
+    description: "Shows how different Sorting Algorithms like Bubble Sort, Merge Sort, Quick Sort, etc sorts the underlying data.",
+    image: "/assets/sorter.png",
+    technologies: ["WebDev", "JS", "React"],
+    githubUrl: "https://github.com/guytesting85/Sorting-Visualizer",
+    liveUrl: "https://sorting-visualizer-three-iota.vercel.app/"
+  },
 ];
